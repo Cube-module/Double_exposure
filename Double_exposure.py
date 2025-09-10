@@ -10,7 +10,6 @@ import matplotlib.pyplot as plt # RGB
 from google.colab.patches import cv2_imshow
 
 
-
 url1 = "https://wallpapers.com/images/hd/iori-kitahara-standing-on-the-ledge-of-the-ocean-o1vsmby83sz5y57z.jpg"
 url2= "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQLVI5oqw867VkKFwDFtPaTGx2iRyLI2xth6m96yXdszR9vcfGi"
 
@@ -63,10 +62,6 @@ gamma = 0   # яркость
 # смешиваем картинки (изменяем интенсивность свечения диодов в пикселе)
 new_pixels = cv2.addWeighted(resize_im1, alpha, resize_im2, beta, gamma)
 
-
-
-# cv2_imshow(new_pixels)
-
 # задаем соотношение сторон
 plt.figure(figsize=(30, 10))
 
@@ -87,3 +82,4 @@ plt.title('Blended Image, 0.7/0.3')
 plt.axis('off')
 
 plt.show()
+
